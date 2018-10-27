@@ -2,19 +2,24 @@
 
 > A Mobile UI Components based on Vue
 
-### 环境和依赖
+
+## 环境和依赖
 详见 [package.json](https://github.com/sayabc/vue-mobile-ui/blob/master/package.json)
 
-### 文档
-[why vue-mobile-ui](https://github.com/sayabc/vue-mobile-ui/blob/master/docs/why_this.md)
 
-### Issues
-欢迎提交issues
+## 文档
+[为什么要存在这个项目](https://github.com/sayabc/vue-mobile-ui/blob/master/notes/why_this.md)
 
-### Fork && Star
-点击右上角 __Fork__ 及时接收本项目的更新消息
+
+## Issues
+欢迎提交 [issues](https://github.com/sayabc/vue-mobile-ui/issues)
+
+## Fork && Star
+点击右上角 __Fork__ 及时接收本项目的更新消
+
 喜欢猛戳 __Star__
 
-### License
-[MIT](https://github.com/sayabc/vue-mobile-ui/blob/master/LICENSE)
+## 项目结构说明
 
+## License
+[MIT](https://github.com/sayabc/vue-mobile-ui/blob/master/LICENSE)
