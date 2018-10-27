@@ -53,7 +53,8 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../docs'),
     assetsSubDirectory: 'static',
     // assetsPublicPath: '/',
-    assetsPublicPath: '/docs',
+    assetsPublicPath: '/vue-mobile-ui/', // 使用github的 gh-pages服务 /docs/需要配置此项
+
 
     /**
      * Source Maps
