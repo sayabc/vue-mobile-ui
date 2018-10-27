@@ -2,6 +2,8 @@
 
 > A Mobile UI Components based on Vue
 
+## 预览地址
+[预览地址](https://sayabc.github.io/vue-mobile-ui)
 
 ## 环境和依赖
 详见 [package.json](https://github.com/sayabc/vue-mobile-ui/blob/master/package.json)

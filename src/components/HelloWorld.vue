@@ -1,7 +1,7 @@
 <template>
   <div class="welcome_container">
-    仓库地址： <a href="https://github.com/sayabc/vue-mobile-ui/">vue-mobile-ui</a>
-    预览地址： <a href="https://github.com/sayabc/vue-mobile-ui/">vue-mobile-ui</a>
+    <p> 仓库地址： <a href="https://github.com/sayabc/vue-mobile-ui/">vue-mobile-ui</a></p>
+    <p>预览地址： <a href="https://github.com/sayabc/vue-mobile-ui/">vue-mobile-ui</a></p>
   </div>
 </template>
 
