@@ -1,6 +1,6 @@
 # vue-mobile-ui
 
-> A Mobile UI Components based on Vue
+> A Mobile UI Components based on Vue, named ?
 
 ## 预览地址
 [预览地址](https://sayabc.github.io/vue-mobile-ui)
@@ -22,6 +22,8 @@
 喜欢猛戳 __Star__
 
 ## 项目结构说明
+
+## 本项目受启发于下列项目
 
 ## License
 [MIT](https://github.com/sayabc/vue-mobile-ui/blob/master/LICENSE)
