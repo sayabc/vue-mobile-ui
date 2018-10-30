@@ -15,6 +15,7 @@
 
 ## Issues
 欢迎提交 [issues](https://github.com/sayabc/vue-mobile-ui/issues)
+- [ ] 添加一个机器人(至少现在认为对于一个将会有很多用户的产品来说是有必要的😆)
 
 ## Fork && Star
 点击右上角 __Fork__ 及时接收本项目的更新消
