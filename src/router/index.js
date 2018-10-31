@@ -44,6 +44,9 @@ const extraComponents = [
 
 newRouters.temRouters.concat(extraComponents)
 
+console.log('newRouters.temRouters', newRouters.temRouters)
+
+console.log('extraComponents', extraComponents)
 export default new Router({
   routes: newRouters.temRouters
 })
