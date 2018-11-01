@@ -12,10 +12,14 @@ const handleRouters = (lists) => {
   let temRouters = []
   lists.map((sameTypeItems) => {
     sameTypeItems.items.map(item => {
+      // console.log(require(`@/components/${item.name}${item.path}`))
       temRouters.push({
-        name: item.name,
         path: item.path,
-        component: require(`@/components/${item.name}${item.path}`),
+        name: item.name,
+        component: require(`@/components/${item.name}${item.path}`).default,
+        // coomponent:  () => import(/* webpackChunkName: "Home" */ `${item.name}`), // 注释部分设置默认打包文件名
+        // component: r => require.ensure([], () => r(require('@/components/' + item.name + item.path)), `${item.name}`), // no
+        // component: r => require.ensure([], () => r(require('../components/Toast/toast.vue')), 'Toast'), // yes
         meta: {
           title: item.title || item.name
         }
@@ -28,9 +32,9 @@ const handleRouters = (lists) => {
   }
 }
 
-const newRouters = handleRouters(ListConfig)
+let newRouters = handleRouters(ListConfig)
 
-const extraComponents = [
+let extraComponents = [
   {
     path: '/',
     name: 'HelloWorld',
@@ -42,11 +46,11 @@ const extraComponents = [
   }
 ]
 
-newRouters.temRouters.concat(extraComponents)
+console.log('注册的路由：', extraComponents.concat(newRouters.temRouters))
 
-console.log('newRouters.temRouters', newRouters.temRouters)
-
-console.log('extraComponents', extraComponents)
 export default new Router({
-  routes: newRouters.temRouters
+  // routes: extraComponents
+  // routes: newRouters.temRouters
+  // base: __dirname,
+  routes: [].concat(extraComponents, newRouters.temRouters)
 })
