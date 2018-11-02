@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import HelloWorld from '@/components/HelloWorld'
-import List from '@/components/List'
+import AllList from '@/components/AllList'
 
 import ListConfig from '@/components/components.list.json'
 
@@ -40,17 +40,12 @@ let extraComponents = [
     name: 'HelloWorld',
     component: HelloWorld
   }, {
-    path: '/list',
-    name: 'List',
-    component: List
+    path: '/alllist',
+    name: 'AllList',
+    component: AllList
   }
 ]
 
-console.log('注册的路由：', extraComponents.concat(newRouters.temRouters))
-
 export default new Router({
-  // routes: extraComponents
-  // routes: newRouters.temRouters
-  // base: __dirname,
   routes: [].concat(extraComponents, newRouters.temRouters)
 })

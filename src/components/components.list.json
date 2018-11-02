@@ -1,8 +1,30 @@
-[{
-  "componentsType": "type1",
-  "items": [{
-     "name": "Toast",
-     "path": "/toast",
-     "component": "Toast"
-  }]
-}]
+[
+  {
+    "componentsType": "ActionComps",
+    "items": [{
+      "name": "Toast",
+      "path": "/toast",
+      "component": "Toast"
+    }]
+  },
+  {
+    "componentsType": "ShowComps",
+    "items": [{
+      "name": "Layout",
+      "path": "/layout",
+      "component": "Layout"
+    }, {
+      "name": "List",
+      "path": "/list",
+      "component": "List"
+    }, {
+      "name": "Buttons",
+      "path": "/buttons",
+      "component": "Buttons"
+    }, {
+      "name": "Icons",
+      "path": "/icons",
+      "component": "Icons"
+    }]
+  }
+]

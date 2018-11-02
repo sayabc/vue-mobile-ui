@@ -1,6 +1,5 @@
 <template>
   <div class="list_wrapper">
-    <h3>请在移动端查看</h3>
     <ul>
       <li v-for="(item, index) in newRouters.temRouters"
           :key="item+index"
@@ -44,8 +43,6 @@ export default {
       }
     },
     handleItemJump (item) {
-      console.log(item)
-      // location.href = item.path
       this.$router.push({
         path: item.path
       })
@@ -53,7 +50,6 @@ export default {
   },
   mounted () {
     this.newRouters = this.handleRouters(ListConfig)
-    console.log(this.newRouters)
   }
 }
 </script>
@@ -73,5 +69,10 @@ export default {
   border: 1px solid gray;
   border-radius: 4px;
   margin-bottom: 20px;
+}
+ul {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 4px;
 }
 </style>
