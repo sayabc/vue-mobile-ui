@@ -46,11 +46,6 @@ let extraComponents = [
   }
 ]
 
-console.log('注册的路由：', extraComponents.concat(newRouters.temRouters))
-
 export default new Router({
-  // routes: extraComponents
-  // routes: newRouters.temRouters
-  // base: __dirname,
   routes: [].concat(extraComponents, newRouters.temRouters)
 })
