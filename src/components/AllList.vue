@@ -23,25 +23,25 @@ export default {
     }
   },
   methods: {
-    handleRouters (lists) {
-      let temRouters = []
-      lists.map((sameTypeItems) => {
-        sameTypeItems.items.map(item => {
-          temRouters.push({
-            name: item.name,
-            path: item.path,
-            component: require(`@/components/${item.name}${item.path}`),
-            meta: {
-              title: item.title || item.name
-            }
-          })
-        })
+handleRouters (lists) {
+  let temRouters = []
+  lists.map((sameTypeItems) => {
+    sameTypeItems.items.map(item => {
+      temRouters.push({
+        name: item.name,
+        path: item.path,
+        component: require(`@/components/${item.name}${item.path}`),
+        meta: {
+          title: item.title || item.name
+        }
       })
-      return {
-        temRouters,
-        lists
-      }
-    },
+    })
+  })
+  return {
+    temRouters,
+    lists
+  }
+},
     handleItemJump (item) {
       this.$router.push({
         path: item.path
