@@ -23,25 +23,25 @@ export default {
     }
   },
   methods: {
-handleRouters (lists) {
-  let temRouters = []
-  lists.map((sameTypeItems) => {
-    sameTypeItems.items.map(item => {
-      temRouters.push({
-        name: item.name,
-        path: item.path,
-        component: require(`@/components/${item.name}${item.path}`),
-        meta: {
-          title: item.title || item.name
-        }
+    handleRouters (lists) {
+      let temRouters = []
+      lists.map(sameTypeItems => {
+        sameTypeItems.items.map(item => {
+          temRouters.push({
+            name: item.name,
+            path: item.path,
+            component: require(`@/components/${item.name}${item.path}`),
+            meta: {
+              title: item.title || item.name
+            }
+          })
+        })
       })
-    })
-  })
-  return {
-    temRouters,
-    lists
-  }
-},
+      return {
+        temRouters,
+        lists
+      }
+    },
     handleItemJump (item) {
       this.$router.push({
         path: item.path
@@ -60,13 +60,13 @@ handleRouters (lists) {
   margin: 0 auto;
   border: 1px solid gray;
   border-radius: 4px;
-  min-height: 600px;
+  min-height: 200px;
 }
 .item_list {
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid gray;
+  border: 1px solid gray; /*no*/
   border-radius: 4px;
   margin-bottom: 20px;
 }

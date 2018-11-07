@@ -2,7 +2,8 @@
 - [ ] 添加一个机器人(至少现在认为对于一个将会有很多用户的产品来说是有必要的😆)
 - [ ] 后期会考虑两种使用方式，一种是 __import { button } from 'vue-mobile-ui'__ 另外一种是不需要添加本依赖，直接 __copy__ 样式即可使用，这个会对目录结构和配置有影响。
 - [ ] __components.list.json__ 过程中会对组件进行细化分类，先确定一级便于后续的扩展
-- [ ] 移动端响应式适配方案 待做需求 (参考weui和mint-ui 均使用px作为基本单位)
+- [ ] 移动端响应式适配方案 待做需求 (参考weui和mint-ui 均使用px作为基本单位) 但需要确定是否只是demo级别，所以保险起见，使用 __rem__ 添加 __postcss-px2rem__ 并默认设计稿 750px 配置
+      __build__ 下的 __vue-loader.conf.js__ 、__webpack.base.conf.js__ ，并在 __index.html__ 动态设置下根元素，此时 1rem = 75px
 - [ ] 使用 __vue__ 似乎有点大材小用
 
 ## attentions

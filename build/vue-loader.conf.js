@@ -7,6 +7,8 @@ const sourceMapEnabled = isProduction
   : config.dev.cssSourceMap
 
 module.exports = {
+  //使用px-rem转换
+  postcss: [require('postcss-px2rem')({remUnit: 75})], // remUnit为1rem应的px值 UI稿是750px
   loaders: utils.cssLoaders({
     sourceMap: sourceMapEnabled,
     extract: isProduction
