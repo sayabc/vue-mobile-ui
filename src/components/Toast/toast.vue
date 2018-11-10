@@ -14,11 +14,15 @@
 
     <div class="full_mask" v-if="showFullMask">
       <div class="mask_body_container">
-        <h4 class="toast_title">提示!</h4>
-        <p class="toast_body">
+        <h4 class="mask_container_title toast_title">提示!</h4>
+        <p class="mask_container_body toast_body">
           提示信息最好单行
         </p>
       </div>
+    </div>
+
+    <div class="notes">
+      Toast 应用场景: success  error
     </div>
 
   </div>
@@ -88,5 +92,12 @@ ul>li {
 }
 .toast_body {
   text-align: left;
+}
+.notes {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: left;
+  border: 1px dotted gray; /*no*/
+  border-radius: 10px;
 }
 </style>

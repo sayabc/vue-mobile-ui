@@ -5,6 +5,10 @@
       "name": "Toast",
       "path": "/toast",
       "component": "Toast"
+    }, {
+      "name": "Dialog",
+      "path": "/dialog",
+      "component": "Dialog"
     }]
   },
   {
