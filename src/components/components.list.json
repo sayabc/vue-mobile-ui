@@ -9,6 +9,10 @@
       "name": "Dialog",
       "path": "/dialog",
       "component": "Dialog"
+    }, {
+      "name": "Form",
+      "path": "/form",
+      "component": "Form"
     }]
   },
   {
