@@ -22,7 +22,8 @@
     </div>
 
     <div class="notes">
-      Toast 应用场景: success  error
+      <p>Toast 应用场景: success  error</p>
+      <p>展现形式: 标题+提示文字、提示文字、提示图片+提示文字</p>
     </div>
 
   </div>

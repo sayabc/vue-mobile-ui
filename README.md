@@ -34,6 +34,7 @@
 ## 本项目受启发于下列项目
 [weui](https://github.com/Tencent/weui)
 [mint-ui](https://github.com/ElemeFE/mint-ui)
+[meili](https://github.com/meili/min-cli)
 
 ## License
 [MIT](https://github.com/sayabc/vue-mobile-ui/blob/master/LICENSE)
