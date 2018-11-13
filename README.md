@@ -24,6 +24,71 @@
 
 ## 项目结构说明
 [项目开发具体组件思路](https://github.com/sayabc/vue-mobile-ui/blob/master/notes/class.md)
+## File Structure
+
+The following directories and files:
+
+```
+vue-mobile-ui
+.
+├── LICENSE
+├── README.md
+├── package.json
+├── build
+│   ├── build.js
+│   ├── check-version.js
+│   ├── logo.png
+│   ├── utils.js
+│   └── vue-loader.conf.js
+│   ├── webpack.base.conf.js
+│   ├── webpack.dev.conf.js
+│   ├── webpack.prod.conf.js
+├── config
+│   ├── dev.env.js
+│   ├── index.js
+│   └── prod.env.js
+│   └── test.env.js
+├── docs
+│   ├── index.html
+│   ├── static
+│   │── ├── css
+│   │── ├── js
+└── src
+    ├── assets
+    │   ├── css
+    │   │   └── reset.css
+    │   ├── logo.png
+    │   ├── img
+    │   │   └── logo.png
+    ├── components
+    │   ├── Buttons
+    │   │   └── buttons.vue
+    │   ├── Dialog
+    │   │   └── dialog.vue
+    │   ├── Form
+    │   │   └── form.vue
+    │   ├── Icons
+    │   │   └── icons.vue
+    │   ├── Input
+    │   │   └── input.vue
+    │   ├── Layout
+    │   │   └── layout.vue
+    │   ├── List
+    │   │   └── list.vue
+    │   ├── Popup
+    │   │   └── popup.vue
+    │   ├── Process
+    │   │   └── process.vue
+    │   ├── Toast
+    │   │   └── toast.vue
+    │   └── AllList.vue
+    │   └── HelloWorld.vue
+    │   └── components.list.json
+    ├── routes
+    │   └── index.jsx
+    ├── App.vue
+    └── main.js
+```
 
 ## 项目开发、部署说明
 1. 使用gh-pages进行部署，网站显示资源需要在 __docs__ 目录下，所以需要配置下weoback打包策略；
