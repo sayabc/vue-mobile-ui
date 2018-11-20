@@ -1,12 +1,28 @@
 <template>
   <div id="app">
+    <p class="header" v-if="this.$route.name !== 'AllList'" @click="handleBack"> <span class="header_back">返回</span> <span class="header_title">{{title}}</span></p>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      title: ''
+    }
+  },
+  methods: {
+    handleBack () {
+      this.$router.back()
+    }
+  },
+  watch: {
+    $route () {
+      this.title = this.$route.name
+    }
+  }
 }
 </script>
 
@@ -52,4 +68,18 @@ dir {
   margin-inline-end: 0px;
   padding-inline-start: 0;
 }
+
+.header {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted gray; /*no*/
+}
+.header_back {
+  position: absolute;
+  left: 20px;
+}
+
 </style>

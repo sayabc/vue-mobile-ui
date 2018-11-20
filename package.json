@@ -1,7 +1,7 @@
 {
   "name": "vue-mobile-ui",
   "version": "1.0.0",
-  "description": "A Mobile UI Components based on Vue",
+  "description": "vmi: A Mobile UI Components based on Vue",
   "author": "eyea",
   "private": true,
   "scripts": {

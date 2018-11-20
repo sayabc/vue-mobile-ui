@@ -1,11 +1,12 @@
 <template>
   <div class="list_wrapper">
-    <ul>
-      <li v-for="(item, index) in newRouters.temRouters"
+    <ul v-for="(classItem, classIndex) in newRouters.lists" :key="classIndex">
+      <p class="list_type">{{classIndex+1}}: {{classItem.componentsType}}</p>
+      <li v-for="(item, index) in classItem.items"
           :key="item+index"
           @click="handleItemJump(item)"
           class="item_list">
-        {{item.meta.title}}
+        {{item.name}}
       </li>
     </ul>
 
@@ -74,5 +75,19 @@ ul {
   padding-left: 4px;
   padding-right: 4px;
   margin-top: 4px;
+}
+.list_type {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.list_wrapper>ul {
+  margin-bottom: 40px;
+}
+.list_wrapper>ul>p {
+  font-size: 28px;
+}
+.list_wrapper>ul:not(:first-child) {
+  border-top: 1px dotted #000; /*no*/
+  padding-top: 20px;
 }
 </style>
