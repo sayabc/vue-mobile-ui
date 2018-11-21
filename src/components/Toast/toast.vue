@@ -24,6 +24,7 @@
     <div class="notes">
       <p>Toast 应用场景: success  error</p>
       <p>展现形式: 标题+提示文字、提示文字、提示图片+提示文字</p>
+      <p>展现方式: 上、中、下，动画可以自定义</p>
     </div>
 
   </div>
