@@ -20,7 +20,6 @@
         </p>
         <div class="mask_comtainers_btns">
           <span class="mask_btn mask_btn_flex" @click="handleConfirm">确认</span>
-          <span class="mask_btn_blank"></span>
           <span class="mask_btn mask_btn_flex" @click="handleDialog">取消</span>
         </div>
       </div>
@@ -79,6 +78,7 @@ ul>li {
   right: 0;
   bottom: 0;
   background: rgba(255,255,255,.5);
+  background: rgba(0,0,0,.6); /*dialog新添加*/
 }
 .mask_body_container {
   border: 1px solid gray; /*no*/
@@ -88,31 +88,41 @@ ul>li {
   transform: translate(-50%, -50%);
   padding: 8px 16px;
   border-radius: 6px;
+  background-color: #fff;
 }
 .mask_container_title {
   text-align: center;
   font-size: 14px;
+  margin-top: 20px;
 }
 .mask_container_body {
   text-align: left;
+  border-bottom: 1px solid gray; /*no*/
 }
 .dialog_container {
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
+  padding: 0;
+  width: 66%;
 }
 .dialog_boy {
-  margin: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px ;
+  text-align: center;
+  box-sizing: border-box;
 }
 .mask_comtainers_btns {
   display: flex;
   margin-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 .mask_btn {
   flex: 1;
   padding: 6px 10px;
 }
-.mask_btn_flex {
-  border: 1px solid gray; /*no*/
-  border-radius: 8px;
+.mask_btn:nth-child(1) {
+  border-right: 1px solid gray; /*no*/
 }
 .mask_btn_blank {
   flex: 1;

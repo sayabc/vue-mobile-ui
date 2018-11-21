@@ -12,6 +12,6 @@
 - [ ] 按钮 Buttons
 - [ ] 图标 Icons
 - [ ] 提示 Toast
-- [ ] 对话框 Dialog
+- [x] 对话框 Dialog
 - [ ] 用户输入 Input
 - [ ] 进度 Process

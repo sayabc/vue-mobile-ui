@@ -87,6 +87,7 @@ ul>li {
   transform: translate(-50%, -50%);
   padding: 8px 16px;
   border-radius: 6px;
+  background-color: #fff;
 }
 .toast_title {
   text-align: center;
