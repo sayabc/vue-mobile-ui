@@ -82,4 +82,8 @@ dir {
   left: 20px;
 }
 
+input {
+  border: none;
+}
+
 </style>

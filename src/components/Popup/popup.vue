@@ -12,10 +12,11 @@
       </ul>
     </div>
 
-    <div class="full_mask" v-if="showFullMask">
-      <div class="mask_body_container">
+    <div class="full_mask" v-if="showFullMask" @click="handleClickMask">
+      <!-- <div class="mask_body_container popup_container"> -->
+      <div class="popup_container">
         <p class="mask_container_body popup_body">
-          提示信息最好单行
+          显示操作名称
         </p>
       </div>
     </div>
@@ -39,6 +40,12 @@ export default {
   methods: {
     handleShowPop () {
       this.showFullMask = true
+    },
+    handleClickMask (e) {
+      let eDom = e.target.className
+      if (eDom === 'full_mask') {
+        this.showFullMask = false
+      }
     }
   }
 }
@@ -81,9 +88,17 @@ ul>li {
   border-radius: 6px;
   background-color: #fff;
 }
+.popup_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: gray;
+}
 
 .popup_body {
-  text-align: left;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
 }
 .notes {
   margin-top: 60px;
