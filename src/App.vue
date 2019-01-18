@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p class="header" v-if="this.$route.name !== 'AllList'" @click="handleBack"> <span class="header_back">返回</span> <span class="header_title">{{title}}</span></p>
+    <p class="header" v-if="this.$route.name !== 'AllList'" @click="handleBack"> <span class="header_back" v-if="this.$route.name !== 'HelloWorld'">返回</span> <span class="header_title">{{title}}</span></p>
     <router-view/>
   </div>
 </template>
@@ -10,7 +10,7 @@ export default {
   name: 'App',
   data () {
     return {
-      title: ''
+      title: 'Weclome'
     }
   },
   methods: {
