@@ -1,7 +1,7 @@
 <template>
   <div class="welcome_container">
     <p>仓库地址： <a href="https://github.com/sayabc/vue-mobile-ui/">vue-mobile-ui</a></p>
-    <p>线上预览： <a href="https://sayabc.github.io/vue-mobile-ui">vue-mobile-ui</a></p>
+    <p>线上预览： <a href="https://sayabc.github.io/vue-mobile-ui/index.html#/alllist">vue-mobile-ui</a></p>
 
     <router-link to="./alllist">本地预览地址</router-link>
   </div>
